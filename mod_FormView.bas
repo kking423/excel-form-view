@@ -35,25 +35,34 @@ Dim config() As String
     
 End Sub
 
+
 Sub FormView_Display()
 Dim config() As String
-    
+
+On Error GoTo Err
     Call FormView_Calculate_Source_Settings
-    
+
     Application.ScreenUpdating = False
         Call FormView_Load
-        
+
         config = FormView_Config_Setting("Form-Config", "FORMATTING")
-        
+
         If config(1) = False Then
             Call FormView_Formats 'optional
-    
+
         End If
-        
+
         'set the active cell to make it easier for user to make any updates (if needed)
         Sheets("Form-View").Range(form_value_start).Select
-    
+
     Application.ScreenUpdating = True
+
+Err:
+    If Err.Number <> 0 Then
+        MsgBox "[" & Err.Number & "] " & Err.Description & vbCrLf & vbCrLf & "Source: " & Err.Source, vbExclamation, "Data Form View: Error"
+        Err.Clear
+        Resume Next
+    End If
 End Sub
 
 
