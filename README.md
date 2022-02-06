@@ -13,7 +13,7 @@ and it's just not always easy to have a conversation with others about the data.
 Excel does provide a built-in feature with a pop-up form, but it's not super intuitive to use, 
 it's bound to only 32 fields, and doesn't work with the Mac Version.
 
-![](https://raw.githubusercontent.com/kking423/excel-form-view/main/readme-resources/data-form-challenges.png)
+![](https://raw.githubusercontent.com/kking423/excel-form-view/main/readme-resources/Data-Table-Challenges.png)
 
 ## The Solution:
 Using the built-in Form View as a guide, I developed a similar feature using VBA that 
