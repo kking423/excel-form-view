@@ -1,6 +1,8 @@
 # Excel Form View
 
-![](https://raw.githubusercontent.com/kking423/excel-form-view/main/readme-resources/form-view.png)
+![](https://raw.githubusercontent.com/kking423/excel-form-view/main/readme-resources/Form-View.png)
+
+https://github.com/kking423/excel-form-view/blob/main/readme-resources/Form-View.png?raw=true
 
 Excel already has a built-in "Form View" feature, but it does have some limitations for wide tables (lots of columns) 
 and it doesn't work on Mac versions. With a little VBA magic, we can create our own version of "Form View" that makes
