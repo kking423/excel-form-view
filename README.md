@@ -27,6 +27,8 @@ but when I need it, I find that it's an invaluable utility that makes it easier 
 * Within Form-View, you can make in-line updates back to the source sheet
 * All the source table formulas, validations, conditional formatting, notes, etc. is preserved in Form-View
 
+![](https://youtu.be/YhUsmWjsr3A)
+
 ## Setup:
 * Step 1. Download and open the Form-View-NonMacro-Starter.xlsx workbook. Save a new copy as a macro-enabled version. None of the code will work until we import the module in the next step.
 * Step 2. Download the mod_FormView.bas file. Within the "Developer" menu, import module into your newly created macro-enabled workbook.
