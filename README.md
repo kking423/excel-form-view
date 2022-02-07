@@ -2,27 +2,26 @@
 
 ![](https://raw.githubusercontent.com/kking423/excel-form-view/main/readme-resources/Form-View.png)
 
-Excel already has a built-in "Form View" feature, but it does have some limitations for wide tables (lots of columns) 
-and it doesn't work on Mac versions. With a little VBA magic, we can create our own version of "Form View" that makes
-reviewing row-level data much more enjoyable and practical.
 
 ## The Problem:
 Workbooks can often get cluttered with multiple sheets containing huge amounts of data with dozens or more columns. 
-It can be brutal trying to scroll down, up, and across the sheet to review data, 
-and it's just not always easy to have a conversation with others about the data. 
-Excel does provide a built-in feature with a pop-up form, but it's not super intuitive to use, 
-it's bound to only 32 fields, and doesn't work with the Mac Version.
+It can be brutal trying to scroll down, up, and across the sheet specially when contending with 
+different row, column, and cell formats. Excel does provide a built-in feature with a pop-up form, 
+but it's not super intuitive to use, it's bound to only 32 fields, doesn't carry-over validation 
+lists and formulas, and doesn't work with the Mac Version.  
 
 ![](https://raw.githubusercontent.com/kking423/excel-form-view/main/readme-resources/Data-Table-Challenges.png)
 
 ## The Solution:
-Using the built-in Form View as a guide, I developed a similar feature using VBA that 
-dynamically generates a vertical/transposed view of any row from a data table object. 
-With a simply double-click within the row you want to view, the Form-View sheet immediately loads. 
-From there you can make in-line updates and save back to the original source table. 
-This has saved me tremendous amounts of time over the years and has received a lot of great feedback from co-workers. 
-It's not a feature I use all the time, but when I need it, 
-I find that it's an invaluable utility that makes it easier to work with raw data.
+Using the built-in Form View as a guide, 
+I developed a similar feature using VBA that dynamically generates a vertical/transposed view of any row from a 
+data table object.  Simply double-click within a cell of the row you want to view, and the 
+Form-View sheet immediately loads. From there you can make in-line updates and save back to the original source table. 
+
+I've often use this custom Form-View as a quick way to manage small datasets, prototypes, 
+and a tool to make it easier to present data during screen shares. This has saved me tremendous amounts of time 
+over the years and has received a lot of great feedback from co-workers. It's not a feature I use all the time, 
+but when I need it, I find that it's an invaluable utility that makes it easier to work with raw data.
 
 * When enabled, you can double-click any cell in any Data Table in Excel workbook and launch the Form-View sheet.
 * Within Form-View, you can make in-line updates back to the source sheet
