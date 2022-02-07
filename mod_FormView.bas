@@ -1,4 +1,3 @@
-Attribute VB_Name = "mod_FormView"
 Option Explicit
 
 Dim src_sheet As String
